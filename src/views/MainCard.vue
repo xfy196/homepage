@@ -130,10 +130,10 @@
     </div>
 
     <div class="footer">
-      <p>
-        ©2025 小小荧 |
+      <span>
+        ©2017 小小荧 |
         <a href="https://github.com/xfy196/homepage">仓库</a>
-      </p>
+      </span>
       <span>
         <a class="text-white hover:underline" href="https://beian.miit.gov.cn/">皖ICP备18011786号-1</a>
       </span>

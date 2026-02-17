@@ -268,11 +268,12 @@
 
     & .footer {
         position: absolute;
-        bottom: 5px;
+        bottom: 15px;
         left: 50%;
         transform: translateX(-50%);
         display: flex;
         align-items: center;
+        gap: 0.5rem;
     }
 }
 
@@ -304,7 +305,7 @@
 
             & .sayHi {
                 & h1 {
-                    font-size: 2.2rem;
+                    font-size: 2.0rem;
                 }
             }
         }
@@ -327,6 +328,12 @@
                     }
                 }
             }
+        }
+
+        & .footer {
+            flex-direction: column;
+            gap: 0.5rem;
+            bottom: 0;
         }
     }
 }
