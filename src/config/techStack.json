@@ -21,10 +21,6 @@
       "name": "MySql"
     },
     {
-      "icon": "logos:php",
-      "name": "PHP"
-    },
-    {
       "icon": "material-icon-theme:python",
       "name": "Python"
     },
@@ -33,16 +29,16 @@
       "name": "Vue"
     },
     {
+      "icon": "material-icon-theme:go",
+      "name": "Go"
+    },
+    {
       "icon": "skill-icons:jquery",
       "name": "Jquery"
     },
     {
-      "icon": "skill-icons:photoshop",
-      "name": "PhotoShop"
-    },
-    {
-      "icon": "devicon:xd",
-      "name": "XD"
+      "icon": "catppuccin:adobe-ai",
+      "name": "AI"
     }
   ]
 }

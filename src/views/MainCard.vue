@@ -36,16 +36,8 @@
           <span class="cardHeader">我的一些鸽子计划📃</span>
           <div class="cardMain">
             <div class="todoList">
-              <div
-                class="todoItem"
-                v-for="(i, index) in todo.todoList"
-                :key="index"
-              >
-                <Icon
-                  :icon="i.checked ? 'lets-icons:check-ring' : 'gg:radio-check'"
-                  width="24"
-                  height="24"
-                />
+              <div class="todoItem" v-for="(i, index) in todo.todoList" :key="index">
+                <Icon :icon="i.checked ? 'lets-icons:check-ring' : 'gg:radio-check'" width="24" height="24" />
                 <span v-if="i.checked">
                   <del>{{ i.text }}</del>
                 </span>
@@ -64,20 +56,14 @@
             <div class="progress-item">
               <p>☀️今天已经过去了 {{ hoursPassed }} / 24 小时</p>
               <div class="progress-bar">
-                <div
-                  class="progress-fill"
-                  :style="{ width: hoursProgress + '%' }"
-                ></div>
+                <div class="progress-fill" :style="{ width: hoursProgress + '%' }"></div>
               </div>
             </div>
 
             <div class="progress-item">
               <p>📆本周已经过去了 {{ daysInWeekPassed }} / 7 天</p>
               <div class="progress-bar">
-                <div
-                  class="progress-fill"
-                  :style="{ width: weekProgress + '%' }"
-                ></div>
+                <div class="progress-fill" :style="{ width: weekProgress + '%' }"></div>
               </div>
             </div>
 
@@ -87,10 +73,7 @@
                 {{ daysInCurrentMonth }} 天
               </p>
               <div class="progress-bar">
-                <div
-                  class="progress-fill"
-                  :style="{ width: monthProgress + '%' }"
-                ></div>
+                <div class="progress-fill" :style="{ width: monthProgress + '%' }"></div>
               </div>
             </div>
 
@@ -100,10 +83,7 @@
                 {{ daysInCurrentYear }} 天
               </p>
               <div class="progress-bar">
-                <div
-                  class="progress-fill"
-                  :style="{ width: yearProgress + '%' }"
-                ></div>
+                <div class="progress-fill" :style="{ width: yearProgress + '%' }"></div>
               </div>
             </div>
           </div>
@@ -129,12 +109,7 @@
           <!-- 技术栈 -->
           <h3>我的一些技术栈🫡</h3>
           <div class="techStack">
-            <div
-              v-for="(i, index) in techStack.techStack"
-              :key="index"
-              class="techItem"
-              :data-name="i.name"
-            >
+            <div v-for="(i, index) in techStack.techStack" :key="index" class="techItem" :data-name="i.name">
               <Icon :icon="i.icon" width="40" height="40" />
             </div>
           </div>
@@ -148,23 +123,25 @@
 
         <!-- 外链按钮 -->
         <div class="linkBox card">
-          <link-btn
-            v-for="(i, index) in linkBtns.linkBtn"
-            :key="index"
-            :icon="i.icon"
-            :text="i.text"
-            :color="i.color"
-            :url="i.url"
-          ></link-btn>
+          <link-btn v-for="(i, index) in linkBtns.linkBtn" :key="index" :icon="i.icon" :text="i.text" :color="i.color"
+            :url="i.url"></link-btn>
         </div>
       </div>
     </div>
 
     <div class="footer">
       <p>
-        ©2025 Quenan |
-        <a href="https://github.com/QNquenan/Simple-Homepage">仓库</a>
+        ©2025 小小荧 |
+        <a href="https://github.com/xfy196/homepage">仓库</a>
       </p>
+      <span>
+        <a class="text-white hover:underline" href="https://beian.miit.gov.cn/">皖ICP备18011786号-1</a>
+      </span>
+      <span class="upyun">
+        <a href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral">
+          <img class="" src="/src/assets/img/又拍云_logo2.png" alt="">
+        </a>
+      </span>
     </div>
   </div>
 </template>
