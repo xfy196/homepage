@@ -2,6 +2,10 @@
   "todoList": [
     {
       "text": "成为AI全栈工程师",
+      "checked": true
+    },
+    {
+      "text": "努力上岸",
       "checked": false
     },
     {
